@@ -50,6 +50,10 @@ header .hero {
   height: 554px;
 }
 
+main section:first-child{
+  height: 775px;
+}
+
 /* HEADER - NAVBAR */
 [class*="navbar-"] li {
   display: inline-block;
@@ -153,4 +157,110 @@ nav a .fa {
 
 .hero-link img {
   width: 10rem;
+}
+
+/* MAIN - SECTION : LEARNMORE */
+
+.col_right{
+  float: right;
+}
+
+.col_left{
+  float: left;
+}
+
+section:first-child .container [class*="col_"] {
+  width: 48%;
+  text-align: center;
+  margin: 5rem 0;
+  padding: 6rem 0;
+  background-color: #FAFAFA;
+}
+
+
+section:first-child .container [class*="col_"] > img:first-child {
+  width: 12rem;
+  margin-bottom: 2.2rem;
+}
+
+section:first-child .container [class*="col_"] img:nth-child(1n+2) {
+  width: 27rem;
+  display: inline-block;
+}
+
+section:first-child .container [class*="col_"] p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+section:first-child .container [class*="col_"] a {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #26AFEC;
+  margin-bottom: 2.5rem;
+  display: block;
+}
+
+/* MEDIA QUERY - MAIN - SECTION : LEARNMORE */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+  section:first-child .container [class*="col_"] > img:first-child {
+    width: 9rem;
+    margin-bottom: 1.8rem;
+  }
+
+  section:first-child .container [class*="col_"] img:nth-child(1n+2) {
+    width: 20rem;
+    display: inline-block;
+  }
+
+  section:first-child .container [class*="col_"] p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+  }
+
+  section:first-child .container [class*="col_"] a {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #26AFEC;
+    margin-bottom: 1.8rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  section:first-child .container [class*="col_"] {
+    width: 100%;
+  }
+
+  section:first-child .container [class*="col_"] > img:first-child {
+    width: 12rem;
+    margin-bottom: 2.2rem;
+  }
+
+  section:first-child .container [class*="col_"] img:nth-child(1n+2) {
+    width: 27rem;
+    display: inline-block;
+  }
+
+  section:first-child .container [class*="col_"] p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+  }
+
+  section:first-child .container [class*="col_"] a {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #26AFEC;
+    margin-bottom: 2.5rem;
+
+  }
 }
