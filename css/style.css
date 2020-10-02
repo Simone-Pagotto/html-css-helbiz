@@ -5,6 +5,7 @@ html {
   color: black;
 }
 
+/* DEBUGG */
 .debug .container {
   border:2px dotted cadetblue;
   height: 100%;
@@ -16,10 +17,40 @@ html {
   height: 75px;
 }
 
+/* COMMON */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+.float-r {
+  float: right;
+}
+
+.ghost-align::before{
+  content:"";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/* ALTEZZE CONTAINER */
 header .container [class*="col-"]:first-child {
   height: 75px;
 }
 
+header .hero .container [class*="col-"] {
+  height: 554px;
+}
+
+/* HEADER - NAVBAR */
 [class*="navbar-"] li {
   display: inline-block;
 }
@@ -47,10 +78,6 @@ header img{
   width: 4.8rem;
 }
 
-.float-r {
-  float: right;
-}
-
 .ghost-align::before{
   content:"";
   height: 100%;
@@ -61,6 +88,8 @@ header img{
 nav a .fa {
   display: none;
 }
+
+/* MEDIA QUERY - HEADER - NAVBAR */
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
   header img{
@@ -94,4 +123,14 @@ nav a .fa {
     color: black;
     text-decoration: none;
   }
+}
+
+/* HEADER - HERO */
+
+.hero {
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/hero-bg.jpg");
 }
