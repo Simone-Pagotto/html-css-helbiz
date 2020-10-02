@@ -46,7 +46,7 @@ header .container [class*="col-"]:first-child {
   height: 75px;
 }
 
-header .hero .container [class*="col-"] {
+header .hero {
   height: 554px;
 }
 
@@ -133,4 +133,24 @@ nav a .fa {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../img/hero-bg.jpg");
+}
+
+.hero-text {
+  color: white;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-family:'Neue Haas Grotesk Display', sans-serif ;
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero-text p {
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.hero-link img {
+  width: 10rem;
 }
