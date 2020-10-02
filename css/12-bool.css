@@ -34,7 +34,7 @@ DEAFULT IMPOSTATO: MEDIA COL DOPO DEFAULT COL; MEDIA OFFSET DOPO DEFAULT OFFSET 
   .col-lg-10 { width: calc((100% / 12) * 10);}
   .col-lg-11 { width: calc((100% / 12) * 11);}
   .col-lg-12 { width: calc((100% / 12) * 12);}
-  .col-lg-none { display: none;}
+  .display-none-lg { display: none;}
 }
 
 @media screen and (max-width: 768px) {
@@ -51,7 +51,7 @@ DEAFULT IMPOSTATO: MEDIA COL DOPO DEFAULT COL; MEDIA OFFSET DOPO DEFAULT OFFSET 
   .col-xs-10 { width: calc((100% / 12) * 10);}
   .col-xs-11 { width: calc((100% / 12) * 11);}
   .col-xs-12 { width: calc((100% / 12) * 12);}
-  .col-xs-none { display: none;}
+  .display-none-xs { display: none;}
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -68,7 +68,7 @@ DEAFULT IMPOSTATO: MEDIA COL DOPO DEFAULT COL; MEDIA OFFSET DOPO DEFAULT OFFSET 
   .col-md-10 { width: calc((100% / 12) * 10);}
   .col-md-11 { width: calc((100% / 12) * 11);}
   .col-md-12 { width: calc((100% / 12) * 12);}
-  .col-md-none { display: none;}
+  .display-none-md { display: none;}
 }
 
 /* \\\\QUERY PER OFFSET//// */
