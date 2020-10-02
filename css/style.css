@@ -51,7 +51,11 @@ header .hero {
 }
 
 main section:first-child{
-  height: 775px;
+  height: 875px;
+}
+
+main section:nth-child(2) .container:first-child{
+  height: 350px;
 }
 
 /* HEADER - NAVBAR */
@@ -263,4 +267,51 @@ section:first-child .container [class*="col_"] a {
     margin-bottom: 2.5rem;
 
   }
+}
+
+/* MAIN - SECTION - HOW */
+
+.how-bg {
+  height: 500px;
+  background-image: url("../img/index-banner.jpg");
+  background-position: center;
+  background-size: 100% 500px;
+
+}
+
+section:nth-child(2) img {
+  width: 16rem;
+}
+
+.iphone-frame {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0);
+}
+
+section:nth-child(2) [class*="col-"] {
+  margin-top: 4rem;
+}
+
+section:nth-child(2) h2 {
+  font-size: 2.1rem;
+}
+
+section:nth-child(2) h3 {
+  margin-bottom: 1rem;
+}
+
+section:nth-child(2) p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+section:nth-child(2) .dots [class*="col-"] {
+  height: 75px;
+  margin-top: 9rem;
+}
+
+section:nth-child(2) i {
+  margin: 0 0.98rem;
 }
