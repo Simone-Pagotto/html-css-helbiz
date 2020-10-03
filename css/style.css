@@ -43,21 +43,24 @@ html {
 
 /* ALTEZZE CONTAINER */
 header .container [class*="col-"]:first-child {
-  height: 75px;
+  min-height: 75px;
 }
 
 header .hero {
-  height: 554px;
+  min-height: 554px;
 }
 
 main section:first-child{
-  height: 875px;
+  min-height: 875px;
 }
 
-main section:nth-child(2) .container:first-child{
-  height: 350px;
+section:nth-child(2) {
+  min-height: 850px;
 }
 
+main section:nth-child(3) .container:first-child {
+  height: 500px;
+}
 /* HEADER - NAVBAR */
 [class*="navbar-"] li {
   display: inline-block;
@@ -276,7 +279,6 @@ section:first-child .container [class*="col_"] a {
   background-image: url("../img/index-banner.jpg");
   background-position: center;
   background-size: 100% 500px;
-
 }
 
 section:nth-child(2) img {
@@ -290,7 +292,7 @@ section:nth-child(2) img {
   transform: translate(-50%, 0);
 }
 
-section:nth-child(2) [class*="col-"] {
+section:nth-child(2) [class*="col-"]  {
   margin-top: 4rem;
 }
 
@@ -307,11 +309,163 @@ section:nth-child(2) p {
   font-weight: 400;
 }
 
-section:nth-child(2) .dots [class*="col-"] {
-  height: 75px;
-  margin-top: 9rem;
+/* section:nth-child(2) .dots [class*="col-"] .container {
+  height: 25px;
+  /* margin-left: 2rem; */
 }
 
 section:nth-child(2) i {
-  margin: 0 0.98rem;
+  /* margin: 0 0.60rem; */
+} */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  section:nth-child(2) i {
+    margin: 0 0.40rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  section:nth-child(2) [class*="col-"]:first-child  {
+    margin-top: 20rem;
+
+  }
+
+  section:nth-child(2) [class*="col-"]:nth-child(2) {
+    margin-top: 1rem;
+
+  }
+
+  /* section:nth-child(2) .dots [class*="col-"] .container{
+    margin-top: -15rem;
+
+  } */
+
+
+}
+
+/* MAIN - SECTION - INFO */
+
+.info-widget-top {
+  width: 90%;
+  margin:0 auto;
+  background-image: url("../img/background-scooter.jpg");
+  background-size: 90rem;
+  background-position: center;
+}
+
+[class*="info-widget-top"] h1 {
+  font-family:'Neue Haas Grotesk Display', sans-serif ;
+  font-size: 3rem;
+  margin-top: 8rem;
+  color: white;
+}
+
+[class*="info-widget-top"] p {
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin: 2rem 0;
+  color: white;
+}
+
+[class*="info-widget-top"] a {
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+[class*="info-"] [class*="col-"] {
+  text-align: center;
+}
+
+.info-widget-down {
+  width: 90%;
+  margin:0 auto;
+}
+
+.info-widget-down [class*="col_"] {
+  width: 48%;
+  min-height: 600px;
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+.info-widget-down .col_left{
+  /* background:linear-gradient(0deg,#252F38,#41566A); */
+  background-color: #41566A;
+  background-image: url("../img/iphone-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: bottom;
+  background-size: 18rem;
+}
+
+.info-widget-down .col_right{
+
+  background-image: url("../img/city-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35rem;
+}
+
+[class*="info-widget-down"] h1 {
+  font-family:'Neue Haas Grotesk Display', sans-serif ;
+  font-size: 3rem;
+  margin: 4rem 6rem 2rem 6rem;
+  color: white;
+}
+
+[class*="info-widget-down"] a {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* MEDIA QUERY - MAIN - SECTION - INFO */
+
+@media screen and (min-width: 769px) and (max-width:992px) {
+
+  [class*="info-"] h1 {
+    font-family:'Neue Haas Grotesk Display', sans-serif ;
+    font-size: 2.5rem;
+    margin-top: 8rem;
+    color: white;
+  }
+
+  [class*="info-"] p {
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 1.7rem 0;
+    color: white;
+  }
+
+  [class*="info-"] a {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 1.7rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .info-widget-down .col_left{
+
+    background-image: none;
+
+  }
+}
+
+@media screen and (max-width:768px) {
+  .info-widget-top {
+
+    background-position: right;
+  }
+
+  .info-widget-down [class*="col_"] {
+    width: 100%;
+
+  }
+
+
 }
