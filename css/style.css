@@ -62,23 +62,34 @@ main section:nth-child(3) .container:first-child {
   min-height: 500px;
 }
 /* HEADER - NAVBAR */
-[class*="navbar-"] li {
+.navbar li {
   display: inline-block;
 }
 
-[class*="navbar-"] li a {
+.navbar li a {
   text-decoration: none;
   text-transform: uppercase;
-  line-height: 75px;
   font-size: 0.7rem;
   color: black;
 }
 
-.navbar-left li a {
+.navbar{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul:first-child li a {
   margin: 0 1.2rem;
 }
 
-.navbar-right li:nth-child(2) a {
+.navbar ul:nth-child(2) li:nth-child(2) a {
   padding: 0 0.7rem;
   margin: 0 0.7rem;
   border-left: 1px solid black;
@@ -107,15 +118,15 @@ nav a .fa {
     width: 4rem;
   }
 
-  [class*="navbar-"] li a {
+  .navbar li a {
     font-size: 0.65rem;
   }
 
-  .navbar-left li a {
+  .navbar ul:first-child li a {
     margin: 0 0.8rem;
   }
 
-  .navbar-right li:nth-child(2) a {
+  .navbar ul:nth-child(2) li:nth-child(2) a {
     padding: 0 0.5rem;
     margin: 0 0.5rem;
 
@@ -292,6 +303,17 @@ section:nth-child(2) img {
   transform: translate(-50%, 0);
 }
 
+.abs-dots{
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 235%);
+
+}
+
+.abs-dots i {
+  margin: 0 0.60rem;
+}
 section:nth-child(2) [class*="col-"]  {
   margin-top: 4rem;
 }
@@ -314,9 +336,7 @@ section:nth-child(2) p {
   /* margin-left: 2rem; */
 }
 
-section:nth-child(2) i {
-  /* margin: 0 0.60rem; */
-} */
+
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
   section:nth-child(2) i {
@@ -351,6 +371,7 @@ section:nth-child(2) i {
   background-image: url("../img/background-scooter.jpg");
   background-size: 90rem;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 [class*="info-widget-top"] h1 {
@@ -392,7 +413,7 @@ section:nth-child(2) i {
 }
 
 .info-widget-down .col_left{
-  /* background:linear-gradient(0deg,#252F38,#41566A); */
+  /* background:linear-gradient(0deg,rgb(37, 47, 56),rgb(65, 86, 106)); */
   background-color: #41566A;
   background-image: url("../img/iphone-bg.png");
   background-repeat: no-repeat;
