@@ -292,6 +292,7 @@ section:first-child .container [class*="col_"] a {
   background-size: 100% 500px;
 }
 
+
 section:nth-child(2) img {
   width: 16rem;
 }
@@ -303,17 +304,18 @@ section:nth-child(2) img {
   transform: translate(-50%, 0);
 }
 
+.flex-box{
+  display: flex;
+  justify-content: center;
+
+}
 .abs-dots{
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translate(-50%, 235%);
+  align-self: flex-end;
+  justify-content: center;
 
 }
 
-.abs-dots i {
-  margin: 0 0.60rem;
-}
+
 section:nth-child(2) [class*="col-"]  {
   margin-top: 4rem;
 }
